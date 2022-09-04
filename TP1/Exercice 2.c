@@ -6,7 +6,7 @@ void main() {
     bool isAnneeBissextile;
 
     while(1) {
-        printf("Saisir une annee : ");
+        printf("Saisir une année : ");
         scanf("%d", &annee);
 
         if(annee >= 0) {
@@ -15,8 +15,9 @@ void main() {
             else
                 isAnneeBissextile = false;
         } else {
+            printf("L'année saisie est négative. Le traitement est impossible.\nVeuillez saisir une année positive.\n");
             continue;
         }
-        printf("%s\n", isAnneeBissextile ? "L'annee est bissextile" : "L'annee n'est pas bissextile");
+        printf("%s\n", isAnneeBissextile ? "L'année est bissextile" : "L'année n'est pas bissextile");
     }
 }
