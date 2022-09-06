@@ -1,19 +1,23 @@
 #include <stdio.h>
 
 void main() {
-    void permute(); //Déclaration de la fonction
-    int tab[] = {8, 5};
-    int x = 0;
-    int y = 1;
-    permute(tab, x, y); // Passage par adresse du tableau
+    void insertion_element(); //Déclaration de la fonction
+    int tab[] = {6, 0, 5, 3};
+    for(int i = 0; i < 4; i++) {
+        insertion_element(tab, tab[i], i); // Passage par adresse du tableau
+    }
+    for(int j = 0; j < 4 ; j++) {
+        printf("%d ", tab[j]);
+    }
 }
 
-void permute(int tab[], int x, int y) {
-    int tmp = tab[y];
-    if(tab[x] > tab[y]) {
-        tab[1] = tab[x];
-        tab[0] = tmp;
+void insertion_element(int tab[], int elem, int i_elem) {
+    int tmp, i;
+    for(i = i_elem; i >= 0; i--) {
+        if(elem < tab[i]) {
+            tmp = tab[i];
+            tab[i] = elem;
+            tab[i+1] = tmp;
+        } 
     }
-    for(int i = 0; i < 2; i++)
-        printf("%d", tab[i]);
 }
