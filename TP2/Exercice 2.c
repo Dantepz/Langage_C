@@ -11,12 +11,12 @@ void main() {
     }
 }
 
-void insertion_element(int tab[], int elem, int i_elem) {
+void insertion_element(int tab[], int element, int i_element) {
     int tmp, i;
-    for(i = i_elem; i >= 0; i--) {
-        if(elem < tab[i]) {
+    for(i = i_element; i >= 0; i--) {
+        if(element < tab[i]) {
             tmp = tab[i];
-            tab[i] = elem;
+            tab[i] = element;
             tab[i+1] = tmp;
         } 
     }
