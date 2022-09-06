@@ -3,6 +3,10 @@
 void main() {
     void insertion_element(); //Déclaration de la fonction
     int tab[] = {6, 0, 5, 3};
+    for(int j = 0; j < 4 ; j++) {
+        printf("%d ", tab[j]);
+    }
+    printf("\n");
     for(int i = 0; i < 4; i++) {
         insertion_element(tab, tab[i], i); // Passage par adresse du tableau
     }
