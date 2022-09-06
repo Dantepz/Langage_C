@@ -5,7 +5,7 @@ void main() {
     int tab[] = {8, 5};
     int x = 0;
     int y = 1;
-    permute(tab, x, y);
+    permute(tab, x, y); // Passage par adresse du tableau
 }
 
 void permute(int tab[], int x, int y) {
@@ -14,5 +14,6 @@ void permute(int tab[], int x, int y) {
         tab[1] = tab[x];
         tab[0] = tmp;
     }
+    for(int i = 0; i < 2; i++)
+        printf("%d", tab[i]);
 }
-test
