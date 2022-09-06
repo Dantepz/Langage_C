@@ -15,3 +15,4 @@ void permute(int tab[], int x, int y) {
         tab[0] = tmp;
     }
 }
+test
