@@ -32,7 +32,7 @@ int mot_palindrome(char *chaine) {
 }
 
 void main() {
-    char chaine[20] = {"la mariee ira mal"};
+    char chaine[20] = {"bob0"};
     int palindrome = mot_palindrome(chaine);
 }
 
