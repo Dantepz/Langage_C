@@ -8,7 +8,7 @@ unsigned int c;
 
 int main(void)
 {
-     WDTCTL = WDTPW | WDTHOLD;    // stop watchdog timer
+    WDTCTL = WDTPW | WDTHOLD;    // stop watchdog timer
 
      //Affichage des leds
     P1DIR |= 0x41;
